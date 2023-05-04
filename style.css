@@ -82,7 +82,10 @@ body{
     color: rgb(143, 0, 231);
     margin-right: 1rem;
 }
-
+.warn{
+    font-family: 'Poppins', sans-serif;
+    color: red;
+}
 @media screen and (max-width: 600px){
     .submit-block__btn{
         position: absolute;

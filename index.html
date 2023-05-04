@@ -17,7 +17,7 @@
 </head>
 <body>
   <div class="container">
-    <form class="date-form">
+    <div id="date-form" class="date-form">
       <div class="input-container">
         <label for="day" class="date-label">Day</label>
         <input required type="number" class="date-input" id="day" placeholder="DD">
@@ -30,20 +30,20 @@
       </div>
       <div class="input-container">
         <label for="year" class="date-label">Year</label>
-        <input required type="number" class="date-input" id="year" placeholder="YYYY">
+        <input required type="number" class="date-input" id="year" placeholder="YYYY" max="9999">
         <small id="warn-year" class="warn"></small>
       </div>
-    </form>
+    </div>
     <div class="submit-block">
       <hr class="submit-block__line">
-      <button class='submit-block__btn' type="submit">
+      <button id="submit-block__btn" class='submit-block__btn' type="submit">
         <img src="assets/images/icon-arrow.svg" alt="" class="arrow-img">
       </button>
     </div>
     <div class="output">
-    <p class="output__text"><span class="output__text--enphasis">38</span>years</p>
-    <p class="output__text"><span class="output__text--enphasis">12</span>months</p>
-    <p class="output__text"><span class="output__text--enphasis">--</span>days</p>
+    <p id='output-year' class="output__text"><span class="output__text--enphasis">--</span>years</p>
+    <p id='output-month' class="output__text"><span class="output__text--enphasis">--</span>months</p>
+    <p id='output-day' class="output__text"><span class="output__text--enphasis">--</span>days</p>
   </div>
 
   </div>
