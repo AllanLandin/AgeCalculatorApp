@@ -37,9 +37,6 @@ function handleSubmit(){
         difYear -= 1
         difMonth = 12 + difMonth
     }
-    console.log(difDay)
-    console.log(difMonth)
-    console.log(difYear)
 
     ouptDay.querySelector('.output__text--enphasis').innerHTML = difDay
     ouptMonth.querySelector('.output__text--enphasis').innerHTML = difMonth
@@ -52,7 +49,7 @@ function validate(){
         const parent = i.parentElement
         i.style.borderColor = ''
         parent.querySelector("label").style.color = ''
-        parent.querySelector("small").innerHTML = ""
+        parent.querySelector("small").innerHTML = ''
 
         // empty
         if (!i.value){
@@ -63,7 +60,7 @@ function validate(){
         }
 
         // month
-        if (inptMonth.value < 1 || inptMonth.value > 12) { 
+        else if (inptMonth.value < 1 || inptMonth.value > 12) { 
             i.style.borderColor = 'red'
             parent.querySelector("label").style.color = 'red'
             parent.querySelector("small").innerHTML = "Must be a valid month"
@@ -71,7 +68,7 @@ function validate(){
         } 
 
         // day
-        if (inptDay.value > daysOfMonths[inptMonth - 1] || inptDay.value < 1){
+        else if (inptDay.value > daysOfMonths[inptMonth.value - 1] || inptDay.value < 1){
             i.style.borderColor = 'red'
             parent.querySelector("label").style.color = 'red'
             parent.querySelector("small").innerHTML = "Must be a valid day"
@@ -79,15 +76,15 @@ function validate(){
         }
 
         // future
-        let inptTime = new Date(inptYear.value, inptMonth.value, inptDay.value).getTime()
-        if (currTime < inptTime) {
+        let inptTime = new Date(inptYear.value, inptMonth.value - 1, inptDay.value).getTime();
+        if(currTime < inptTime) {
             i.style.borderColor = 'red'
             parent.querySelector("label").style.color = 'red'
             parent.querySelector("small").innerHTML = "Must be a past date"
             key = false
         }
     })
-    return key;
+    return key
 }
 
 
