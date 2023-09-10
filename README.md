@@ -1,6 +1,6 @@
-# Frontend Mentor - Age calculator app
+# Frontend Mentor Challenge - Age calculator app
 
-# [Check Out the Project Here](https://allanlandin.github.io/Calculator-App/)
+Link to deploy: [Check out!](https://allanlandin.github.io/Calculator-App/)
 
 ![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
 
