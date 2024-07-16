@@ -1,6 +1,10 @@
-# Frontend Mentor Challenge - Age calculator app
+# Age calculator app
 
-Link to deploy: [Check out!](https://allanlandin.github.io/Calculator-App/)
+A aplicação é uma calculadora de idade, que utiliza HTML e CSS em sua construção.
+
+# Deploy
+ 
+O aplicativo pode ser acesado no seguinte link: https://allanlandin.github.io/Calculator-App/
 
 ![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
 
